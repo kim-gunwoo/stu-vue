@@ -1,0 +1,54 @@
+// vue.js
+https://kr.vuejs.org/v2/guide/index.html
+
+// script cdn
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+// 기본 형태
+const app = new Vue({
+                el: "#root",
+                data: {},
+                methods: {},
+            });
+
+new Vue : 뷰인스턴스
+Vue.component() : 뷰컴포넌트
+
+                        vue 는 kebab-case 를 사용
+PascalCase, camelCase, kebab-case
+
+npm i vue
+npm i -D vue-loader
+npm i -D css-loader
+npm i -D webpack
+npm i -D webpack-cli
+npm i -D webpack-dev-server
+npm i -D vue-template-compiler
+npm i vue-style-loader
+npm 
+
+// 기본 템플릿
+<template>
+    <div></div>
+</template>
+
+<script>
+export default {
+    data() {
+        return {};
+    },
+    methods: {},
+};
+</script>
+
+<style></style>
+
+// v-on 치환 가능
+v-on: = @ 
+
+// .prevent = e.preventDefault(); 로 가능
+@submit.prevent = v-on:submit   e.preventDefault();
+
+// v-bind 
+
+// webpack --watch : 자동 빌드
