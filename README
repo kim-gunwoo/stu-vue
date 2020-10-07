@@ -25,7 +25,7 @@ npm i -D webpack-cli
 npm i -D webpack-dev-server
 npm i -D vue-template-compiler
 npm i vue-style-loader
-npm 
+npm i vuex
 
 // 기본 템플릿
 <template>
@@ -52,3 +52,23 @@ v-on: = @
 // v-bind 
 
 // webpack --watch : 자동 빌드
+
+// Vuex
+https://vuex.vuejs.org/kr/
+
+// Vuex 기본형태 파일명이 store 일때
+import Vue from 'vue';
+import Vuex from 'vuex';
+
+Vue.use(Vuex); // this.$store
+
+export default new Vuex.Store({
+  state: {}, // vue의 data와 비슷
+  getters: {}, // vue의 computed와 비슷
+  mutations: {}, // state를 수정할 때 사용. 동기적
+  actions: {}, // 비동기를 사용할때, 또는 여러 뮤테이션을 연달아 실행할 때
+});
+
+export default , export 2가지 비교하여 알아야함
+export 는 { 선언한 이름 } 으로만 가져올 수 있음
+export default 는 이름을 변경하여 가져올 수 있음
